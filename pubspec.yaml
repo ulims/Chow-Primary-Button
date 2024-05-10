@@ -1,0 +1,21 @@
+name: chow_button
+description: Chow Design System Primary Button
+version: 1.0.2
+homepage: https://github.com/ulims/Chow-Primary-Button.git
+repository: https://github.com/ulims/Chow-Primary-Button.git
+
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
