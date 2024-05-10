@@ -37,7 +37,7 @@ class ChowButton extends StatelessWidget {
               color ?? Theme.of(context).colorScheme.primary),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
+            borderRadius: BorderRadius.circular(borderRadius)
           )),
           textStyle: MaterialStateProperty.all<TextStyle>(textStyle ??
               TextStyle(fontSize: fontSize, fontWeight: FontWeight.w500)),
@@ -48,29 +48,26 @@ class ChowButton extends StatelessWidget {
             ? const SizedBox(
                 height: 22,
                 width: 22,
-                child: CircularProgressIndicator(),
+                child: CircularProgressIndicator()
               )
             : Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Visibility(
-                    visible: icon! ? true : false,
-                    child: iconWidget!
-                  ),
+                  Visibility(visible: icon! ? true : false, child: iconWidget!),
                   const SizedBox(
-                    width: 10,
+                    width: 10
                   ),
                   Text(
                     title!,
                     textAlign: TextAlign.center,
                     style: textStyle ??
                         TextStyle(
-                            fontSize: fontSize, fontWeight: FontWeight.w500),
-                  ),
-                ],
-              ),
-      ),
+                            fontSize: fontSize, fontWeight: FontWeight.w500)
+                  )
+                ]
+              )
+      )
     );
   }
 }
