@@ -1,3 +1,3 @@
-## 1.0.3
+## 1.0.6
 
 * Basic primary Button Functions
